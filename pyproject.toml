@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "telegram-bot-eurusd2rub"
+version = "0.1.0"
+description = "Telegram bot, which can show course USD and EUR in RUB"
+authors = ["Shadowfish"]
+license = "GPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
