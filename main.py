@@ -1,10 +1,10 @@
-import datetime
+#import datetime
 
 from decouple import config
 # from dotenv import load_dotenv
-import requests
+#import requests
 
-import os
+#import os
 
 from src.apilayer_currency import currency_now
 from src.apilayer_currency import currency_list
@@ -105,15 +105,16 @@ def main():
         elif parameter == 'l':
             data = currency_list(api_key)
         elif parameter == 't':
-            telebot_in_work()
+            #telebot_in_work()
+            print('telebot_in_work() ???')
         else:
             print(f"неверный параметр")
 
         for key, value in data.items():
             if type(value) is dict:
                 print(f"{key}:")
-                for key, value in value.items():
-                    print(f"  {key}: {value}")
+                for key2, value2 in value.items():
+                    print(f"  {key2}: {value2}")
             else:
                 print(key, value, sep=': ')
 
