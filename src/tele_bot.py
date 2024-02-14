@@ -6,7 +6,7 @@ from src.apilayer_currency import save_to_json_cash
 from src.apilayer_currency import read_json_cash
 from decouple import config
 
-bot = telebot.TeleBot(config('TG_BOT_API_KEY'))
+bot = telebot.TeleBot(config('TELERGAM_BOT_API'))
 
 
 @bot.message_handler(commands=['start', 'stop'])
